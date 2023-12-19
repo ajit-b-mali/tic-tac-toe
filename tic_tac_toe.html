@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tic_tac_toe.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <span id="setting-Icon"></span>
+    <div class="setting">
+        <div class="name">
+            <button>X</button>
+            <input type="text" id="playerXName">
+            <button>O</button>
+            <input type="text" id="playerOName">
+        </div>
+        <div class="sound">
+            <button>X</button>
+            <input type="range" id="music">
+            <button>O</button>
+            <input type="range" id="vfx">
+        </div>
+        <div class="round">
+            <button>Play Tournament</button>
+            <button>of</button>
+            <input type="number" id="matchCount">
+        </div>
+    </div>
+    <div class="game">
+        <header></header>
+        <main>
+            <canvas id="gameBoard"></canvas>
+        </main>
+        <footer>
+            <button id="o" >O</button>
+            <button id="x" >X</button>
+        </footer>
+        <button id="restart" onclick="window.location.reload(true)">Restart</button>
+    </div>
+    <script src="tic_tac_toe.js"></script>
+</body>
+</html>

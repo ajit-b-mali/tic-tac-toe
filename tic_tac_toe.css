@@ -1,0 +1,137 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 75vw;
+    height: 100vh;
+    background-color: #2f4f4f;
+    margin: auto;
+    border: 5px solid wheat;
+}
+
+#gameBoard {
+    border: 15px solid rgb(190, 154, 107);
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    background-color: rgb(230, 193, 146);
+}
+
+button {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 15px 40px;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: monospace;
+    text-shadow: 0px 0px 5px #2f4f4f;
+    background-color: rgb(238, 185, 88);
+} */
+/**88888888888888888888888888888888888888888888888888888888888**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+body {
+    position: relative;
+    width: 600px;
+    height: 100dvh;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.setting {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+    background-color: darkslategray;
+}
+
+.game {
+    position: relative;
+    width: 600px;
+    height: 100dvh;
+    margin: 0 auto;
+    background-color: rgb(22, 130, 83);
+    max-height: 840px;
+}
+
+#setting-Icon {
+    content: url('assets/setting-Icon.png');
+    position: absolute;
+    margin: 0.5cm;
+    z-index: 2;
+}
+
+#setting-Icon:hover .setting{
+    display: block;
+    background-color: rebeccapurple;
+}
+
+header {
+    position: relative;
+    top: 20px;
+    margin: auto;
+    width: max-content;
+    font-family: jokerman;
+    font-size: 42pt;
+    color: rgb(255, 245, 206);
+}
+header::after {
+    content: 'X - O';
+}
+
+main {
+    width: 390px;
+    height:390px;
+    margin: 50px auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: max-content;
+    padding: 10px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    border: 6pt solid red;
+    font-family: 'arial black';
+    font-size: 30pt;
+    font-weight: bold;
+    opacity: .3;
+    transition: scale 0.5s ease-in-out;
+}
+
+.win {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    scale: 1.2;
+}
+
+#restart {
+    position: absolute;
+    left: 50%;
+    bottom:7%;
+    opacity: 1;
+    transform: translateX(-50%);
+}
